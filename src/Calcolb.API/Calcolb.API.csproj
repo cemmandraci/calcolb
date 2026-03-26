@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.5" />
+    <PackageReference Include="Serilog.AspNetCore" Version="*" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="*" />
+    <PackageReference Include="Serilog.Sinks.File" Version="*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Calcolb.Shared\Calcolb.Shared.csproj" />
+    <ProjectReference Include="..\Modules\Event\Calcolb.Modules.Event.Application\Calcolb.Modules.Event.Application.csproj" />
+    <ProjectReference Include="..\Modules\Estimation\Calcolb.Modules.Estimation.Application\Calcolb.Modules.Estimation.Application.csproj" />
+    <ProjectReference Include="..\Modules\Transport\Calcolb.Modules.Transport.Application\Calcolb.Modules.Transport.Application.csproj" />
+    <ProjectReference Include="..\Modules\Shopping\Calcolb.Modules.Shopping.Application\Calcolb.Modules.Shopping.Application.csproj" />
+    <ProjectReference Include="..\Modules\Expense\Calcolb.Modules.Expense.Application\Calcolb.Modules.Expense.Application.csproj" />
+  </ItemGroup>
+
+</Project>

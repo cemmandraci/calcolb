@@ -1,0 +1,54 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Calcolb.API/Calcolb.API.csproj" />
+    <Project Path="src/Calcolb.Shared/Calcolb.Shared.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/" />
+  <Folder Name="/src/Modules/Estimation/">
+    <Project Path="src/Modules/Estimation/Calcolb.Modules.Estimation.Application/Calcolb.Modules.Estimation.Application.csproj" />
+    <Project Path="src/Modules/Estimation/Calcolb.Modules.Estimation.Domain/Calcolb.Modules.Estimation.Domain.csproj" />
+    <Project Path="src/Modules/Estimation/Calcolb.Modules.Estimation.Infrastructure/Calcolb.Modules.Estimation.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Event/">
+    <Project Path="src/Modules/Event/Calcolb.Modules.Event.Application/Calcolb.Modules.Event.Application.csproj" />
+    <Project Path="src/Modules/Event/Calcolb.Modules.Event.Domain/Calcolb.Modules.Event.Domain.csproj" />
+    <Project Path="src/Modules/Event/Calcolb.Modules.Event.Infrastructure/Calcolb.Modules.Event.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Expense/">
+    <Project Path="src/Modules/Expense/Calcolb.Modules.Expense.Application/Calcolb.Modules.Expense.Application.csproj" />
+    <Project Path="src/Modules/Expense/Calcolb.Modules.Expense.Domain/Calcolb.Modules.Expense.Domain.csproj" />
+    <Project Path="src/Modules/Expense/Calcolb.Modules.Expense.Infrastructure/Calcolb.Modules.Expense.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Shopping/">
+    <Project Path="src/Modules/Shopping/Calcolb.Modules.Shopping.Application/Calcolb.Modules.Shopping.Application.csproj" />
+    <Project Path="src/Modules/Shopping/Calcolb.Modules.Shopping.Domain/Calcolb.Modules.Shopping.Domain.csproj" />
+    <Project Path="src/Modules/Shopping/Calcolb.Modules.Shopping.Infrastructure/Calcolb.Modules.Shopping.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Transport/">
+    <Project Path="src/Modules/Transport/Calcolb.Modules.Transport.Application/Calcolb.Modules.Transport.Application.csproj" />
+    <Project Path="src/Modules/Transport/Calcolb.Modules.Transport.Domain/Calcolb.Modules.Transport.Domain.csproj" />
+    <Project Path="src/Modules/Transport/Calcolb.Modules.Transport.Infrastructure/Calcolb.Modules.Transport.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/" />
+  <Folder Name="/tests/Modules/" />
+  <Folder Name="/tests/Modules/Estimation/">
+    <Project Path="tests/Modules/Estimation/Calcolb.Modules.Estimation.Application.Tests/Calcolb.Modules.Estimation.Application.Tests.csproj" />
+    <Project Path="tests/Modules/Estimation/Calcolb.Modules.Estimation.Domain.Tests/Calcolb.Modules.Estimation.Domain.Tests.csproj" />
+  </Folder>
+  <Folder Name="/tests/Modules/Event/">
+    <Project Path="tests/Modules/Event/Calcolb.Modules.Event.Application.Tests/Calcolb.Modules.Event.Application.Tests.csproj" />
+    <Project Path="tests/Modules/Event/Calcolb.Modules.Event.Domain.Tests/Calcolb.Modules.Event.Domain.Tests.csproj" />
+  </Folder>
+  <Folder Name="/tests/Modules/Expense/">
+    <Project Path="tests/Modules/Expense/Calcolb.Modules.Expense.Application.Tests/Calcolb.Modules.Expense.Application.Tests.csproj" />
+    <Project Path="tests/Modules/Expense/Calcolb.Modules.Expense.Domain.Tests/Calcolb.Modules.Expense.Domain.Tests.csproj" />
+  </Folder>
+  <Folder Name="/tests/Modules/Shopping/">
+    <Project Path="tests/Modules/Shopping/Calcolb.Modules.Shopping.Application.Tests/Calcolb.Modules.Shopping.Application.Tests.csproj" />
+    <Project Path="tests/Modules/Shopping/Calcolb.Modules.Shopping.Domain.Tests/Calcolb.Modules.Shopping.Domain.Tests.csproj" />
+  </Folder>
+  <Folder Name="/tests/Modules/Transport/">
+    <Project Path="tests/Modules/Transport/Calcolb.Modules.Transport.Application.Tests/Calcolb.Modules.Transport.Application.Tests.csproj" />
+    <Project Path="tests/Modules/Transport/Calcolb.Modules.Transport.Domain.Tests/Calcolb.Modules.Transport.Domain.Tests.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,92 @@
+# ========================
+# .NET Build Artifacts
+# ========================
+[Bb]in/
+[Oo]bj/
+out/
+publish/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+nuget.config.local
+*.nuget.props
+*.nuget.targets
+
+# MSBuild
+*.msbuild.log
+msbuild.log
+
+# Test results & coverage
+TestResults/
+coverage/
+*.trx
+*.coveragexml
+*.coverage
+
+# ========================
+# JetBrains Rider
+# ========================
+# .idea folder is partially committed — workspace.xml etc. are ignored via .idea/.gitignore
+# Only commit shared project settings, not user-specific state
+
+# Rider-generated files at project root
+*.sln.iml
+*.iml
+
+# ========================
+# Visual Studio
+# ========================
+.vs/
+*.VC.db
+*.VC.opendb
+*.vcxproj.filters.rej
+
+# ========================
+# OS Generated Files
+# ========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ========================
+# Environment & Secrets
+# ========================
+.env
+.env.*
+!.env.example
+appsettings.Local.json
+appsettings.Development.local.json
+secrets.json
+
+# ========================
+# Claude Code
+# ========================
+# Local Claude settings (permissions, personal config) — not for source control
+.claude/settings.local.json
+
+# ========================
+# Logs
+# ========================
+logs/
+*.log
+*.log.*
+
+# ========================
+# Docker (local only)
+# ========================
+docker-compose.override.yml
