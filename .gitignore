@@ -36,8 +36,7 @@ coverage/
 # ========================
 # JetBrains Rider
 # ========================
-# .idea folder is partially committed — workspace.xml etc. are ignored via .idea/.gitignore
-# Only commit shared project settings, not user-specific state
+.idea/
 
 # Rider-generated files at project root
 *.sln.iml
