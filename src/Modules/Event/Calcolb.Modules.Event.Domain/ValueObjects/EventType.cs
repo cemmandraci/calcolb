@@ -7,7 +7,7 @@ public class EventType : ValueObject
 {
     public static readonly EventType Piknik = new(nameof(Piknik));
     public static readonly EventType Kamp = new(nameof(Kamp));
-    public static readonly EventType DoğumGünü = new(nameof(DoğumGünü));
+    public static readonly EventType DogumGünü = new(nameof(DogumGünü));
     public static readonly EventType EvPartisi = new(nameof(EvPartisi));
     public static readonly EventType SporOutdoor = new(nameof(SporOutdoor));
 
@@ -15,7 +15,7 @@ public class EventType : ValueObject
     {
         [nameof(Piknik)] = Piknik,
         [nameof(Kamp)] = Kamp,
-        [nameof(DoğumGünü)] = DoğumGünü,
+        [nameof(DogumGünü)] = DogumGünü,
         [nameof(EvPartisi)] = EvPartisi,
         [nameof(SporOutdoor)] = SporOutdoor
     };
