@@ -4,7 +4,7 @@ using Mediator;
 namespace Calcolb.Modules.Estimation.Application.Queries.GetEstimationSession;
 
 public sealed record GetEstimationSessionQuery(Guid SessionId)
-    : IQuery<EstimationSessionResult>;
+    : IQuery<EstimationSessionResult?>;
 
 public sealed record EstimationSessionResult(
     Guid SessionId,

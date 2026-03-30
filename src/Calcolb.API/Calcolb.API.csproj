@@ -7,7 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="*" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="*" />
+    <PackageReference Include="Mediator.Abstractions" Version="3.0.2" />
+    <PackageReference Include="Mediator.SourceGenerator" Version="3.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.5" />
+    <PackageReference Include="Scalar.AspNetCore" Version="*" />
     <PackageReference Include="Serilog.AspNetCore" Version="*" />
     <PackageReference Include="Serilog.Sinks.Console" Version="*" />
     <PackageReference Include="Serilog.Sinks.File" Version="*" />
@@ -15,11 +23,21 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Calcolb.Shared\Calcolb.Shared.csproj" />
+
     <ProjectReference Include="..\Modules\Event\Calcolb.Modules.Event.Application\Calcolb.Modules.Event.Application.csproj" />
-    <ProjectReference Include="..\Modules\Estimation\Calcolb.Modules.Estimation.Application\Calcolb.Modules.Estimation.Application.csproj" />
+    <ProjectReference Include="..\Modules\Event\Calcolb.Modules.Event.Infrastructure\Calcolb.Modules.Event.Infrastructure.csproj" />
+
     <ProjectReference Include="..\Modules\Transport\Calcolb.Modules.Transport.Application\Calcolb.Modules.Transport.Application.csproj" />
+    <ProjectReference Include="..\Modules\Transport\Calcolb.Modules.Transport.Infrastructure\Calcolb.Modules.Transport.Infrastructure.csproj" />
+
     <ProjectReference Include="..\Modules\Shopping\Calcolb.Modules.Shopping.Application\Calcolb.Modules.Shopping.Application.csproj" />
+    <ProjectReference Include="..\Modules\Shopping\Calcolb.Modules.Shopping.Infrastructure\Calcolb.Modules.Shopping.Infrastructure.csproj" />
+
     <ProjectReference Include="..\Modules\Expense\Calcolb.Modules.Expense.Application\Calcolb.Modules.Expense.Application.csproj" />
+    <ProjectReference Include="..\Modules\Expense\Calcolb.Modules.Expense.Infrastructure\Calcolb.Modules.Expense.Infrastructure.csproj" />
+
+    <ProjectReference Include="..\Modules\Estimation\Calcolb.Modules.Estimation.Application\Calcolb.Modules.Estimation.Application.csproj" />
+    <ProjectReference Include="..\Modules\Estimation\Calcolb.Modules.Estimation.Infrastructure\Calcolb.Modules.Estimation.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

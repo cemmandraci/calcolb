@@ -1,11 +1,10 @@
 using Calcolb.Modules.Estimation.Application.Repositories;
-using Calcolb.Shared.Exceptions;
 using Mediator;
 
 namespace Calcolb.Modules.Estimation.Application.Queries.GetEstimationSession;
 
 public sealed class GetEstimationSessionQueryHandler
-    : IQueryHandler<GetEstimationSessionQuery, EstimationSessionResult>
+    : IQueryHandler<GetEstimationSessionQuery, EstimationSessionResult?>
 {
     private readonly IEstimationSessionRepository _repository;
 
@@ -14,12 +13,12 @@ public sealed class GetEstimationSessionQueryHandler
         _repository = repository;
     }
 
-    public async ValueTask<EstimationSessionResult> Handle(
+    public async ValueTask<EstimationSessionResult?> Handle(
         GetEstimationSessionQuery query,
         CancellationToken cancellationToken)
     {
-        var session = await _repository.GetByIdAsync(query.SessionId, cancellationToken)
-            ?? throw new DomainException("Tahmin oturumu bulunamadı.");
+        var session = await _repository.GetByIdAsync(query.SessionId, cancellationToken);
+        if (session is null) return null;
 
         return new EstimationSessionResult(
             session.Id,
